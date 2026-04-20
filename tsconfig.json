@@ -31,6 +31,6 @@
     "src/**/*",  
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
-  ],
+, "app"  ],
   "exclude": ["node_modules"]
 }
