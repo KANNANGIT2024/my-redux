@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { fetchUsers } from "@/features/user/userSlice";
-import { useAppDispatch, useAppSelector } from "../src/lib/hooks";
+import { useAppDispatch, useAppSelector } from "../src/hooks/hooks";
 
 import {
   Table,
