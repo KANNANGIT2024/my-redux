@@ -1,11 +1,25 @@
+"use client";
+import React from "react";
 
-import { Button } from "@/components/ui/button";
-
-type Props = {
-  children: React.ReactNode;
+type AppButtonProps = {
+  label: string;
   onClick?: () => void;
+  className?: string;
 };
 
-export function AppButton({ children, onClick }: Props) {
-  return <Button onClick={onClick}>{children}</Button>;
-}
+const AppButton: React.FC<AppButtonProps> = ({
+  label,
+  onClick,
+  className = "",
+}) => {
+  return (
+    <button
+      onClick={onClick}
+      className={`px-4 py-2 bg-blue-500 text-white rounded ${className}`}
+    >
+      {label}
+    </button>
+  );
+};
+
+export default AppButton;
